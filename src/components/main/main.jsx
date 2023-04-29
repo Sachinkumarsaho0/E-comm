@@ -6,7 +6,7 @@ const Main = () => {
     const[old,setOld]=useState([])
     const[popular,setPopular]=useState([])
     useEffect(()=>{
-        axios.get('http://localhost:1337/api/olders').then((old)=>{
+        axios.get('http://localhost:1337/api/olders?populate=*').then((old)=>{
     setOld(old.data.data)
     console.log(old)
         }).catch(()=>{
@@ -14,7 +14,7 @@ const Main = () => {
         }).finally(()=>{
 
         })
-        axios.get('http://localhost:1337/api/popularities').then((popular)=>{
+        axios.get('http://localhost:1337/api/popularities?populate=*').then((popular)=>{
         setPopular(popular.data.data)
         console.log(popular)
 

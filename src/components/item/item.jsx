@@ -9,8 +9,8 @@ const Item = ({item}) => {
   return (
     <div className="box">
       <div className="section">
-      <section> 
-        <img src="https://images.unsplash.com/photo-1551103782-8ab07afd45c1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="image" className="img"/>
+      <section > 
+      <img className="img" src={`http://localhost:1337${item?.image?.data?.attributes?.url}`} alt="game" />
         <article className="title">{item.title}</article>
         <article className="article" >{item.description}</article>
         <section>

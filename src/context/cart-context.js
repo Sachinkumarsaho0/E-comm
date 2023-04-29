@@ -9,7 +9,7 @@ const CartProvider = (props) => {
     setCartData([...cartData, data]);
   };
   const removeCartData = (data) => {
-    data.splice(data, 1);
+    setCartData((data) => data.filter([...cartData]));
   };
   return (
     <CartContext.Provider value={{ cartData, addCartData, removeCartData }}>

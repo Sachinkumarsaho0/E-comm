@@ -4,11 +4,8 @@
     margin-top: 5%;
 }
 
-.box >.section{
-display: flex;
-flex-direction: column;
-margin-left: 40%;
-}
+
+
 .button{
     background-color: black;
     color: aliceblue;
@@ -28,4 +25,10 @@ text-align: justify;}
     color: rgb(10, 10, 10);
     /* background-color: rgb(4, 4, 4); */
     padding-right: 0%;
+}
+
+.box section{
+    float: right;
+    margin-left: 20%;
+    margin-right: 10%;
 }

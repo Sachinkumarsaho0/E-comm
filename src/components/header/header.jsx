@@ -11,7 +11,7 @@ const Header = () => {
         <section className="sec">
             GameZone
         </section>
-        <section onClick={()=>{navigate("/cart")}}>
+        <section onClick={()=>{navigate("/cart")}} className="shop">
             <span>{cartData.length}</span>
         <i class="fa fa-shopping-cart" aria-hidden="true"></i>
         </section>

@@ -6,4 +6,8 @@
 .sec{
     font-weight: bold;
     font-size: x-large;
+    margin-left: 10%;
+}
+.shop{
+    margin-right: 10%;
 }

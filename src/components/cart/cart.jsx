@@ -122,13 +122,13 @@ export default function App() {
   return (
     <div className="App">
         <section>
-   <button> <Link to={"/"}>Home</Link></button>
+   <button> <Link to={"/"}><i class="fa fa-home" aria-hidden="true"></i></Link></button>
         </section>
         
              <section>
              {cartData.map((cartItem)=>{
              <article>
-                 <img src={cartItem.image} alt="image" />
+                 <img src={`http://localhost:1337${cartItem?.image?.data?.attributes?.url}`} alt=""/>
                  <article>{cartItem.title}</article>
                  <article>{cartItem.price}</article>
                  {/* <button onClick={( )=>{removeCartData(item)}}>Remove</button> */}
@@ -140,6 +140,7 @@ export default function App() {
                 {cartData.map((cart)=>{
                     total=total+cart.price
                    return <article>
+                        
                         <span>{cart.title}</span> :
                         <span>{cart.price}</span>
                         <br/>
@@ -150,7 +151,7 @@ export default function App() {
                  <section>Total:{total}</section>
                  
         
-      <button onClick={(total)=>{handlePayment(total)}}>Checkout</button>
+      <button onClick={(total)=>{handlePayment(total)}}>Buy Now</button>
     </div>
   );
 }

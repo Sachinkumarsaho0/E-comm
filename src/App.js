@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Main from "./components/main/main";
 import Cart from "./components/cart/cart";
+import "./App.css";
 function App() {
   return (
     <div className="App">
