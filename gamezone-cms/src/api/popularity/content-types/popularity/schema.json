@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "popularities",
+  "info": {
+    "singularName": "popularity",
+    "pluralName": "popularities",
+    "displayName": "popularity"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "price": {
+      "type": "integer"
+    }
+  }
+}
